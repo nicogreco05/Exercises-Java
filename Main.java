@@ -1,14 +1,13 @@
-import java.util.HashMap;
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+void main() {
+  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+  // to see how IntelliJ IDEA suggests fixing it.
+  IO.println(String.format("Hello and welcome!"));
 
-public class Main {
-    public void main(String[] args){
-        RubricaImpl rub = new RubricaImpl();
-        System.out.println(rub.aggiungiContatto("Silvio", "3335363210"));
-        System.out.println(rub.aggiungiContatto("Mario", "3335363211"));
-        System.out.println(rub.aggiungiContatto("Pino", "3335363212"));
-        System.out.println(rub.aggiungiContatto("Matteo", "3335363213"));
-        System.out.println(rub.aggiungiContatto("Nicolò", "3335363214"));
-
-        System.out.println(rub.stampaRubrica());
-    }
+  for (int i = 1; i <= 5; i++) {
+    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+    IO.println("i = " + i);
+  }
 }
